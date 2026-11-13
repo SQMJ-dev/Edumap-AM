@@ -1,0 +1,19 @@
+# dependencies
+node_modules
+
+# build output (Vercel builds this itself)
+dist
+
+# environment and secrets
+.env
+.env.*
+
+# logs
+*.log
+npm-debug.log*
+
+# editor and system files
+.vscode
+.idea
+.DS_Store
+Thumbs.db
