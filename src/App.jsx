@@ -67,7 +67,7 @@ export default function App() {
       <header className="flex flex-wrap items-center gap-4 px-6 py-5">
         <h1>
           <button type="button" onClick={() => setView('home')} aria-label="Laman utama" className="flex items-center gap-4 text-left">
-            <span className="h-9 w-9 rounded-full bg-teal" aria-hidden="true" />
+            <img src={`${import.meta.env.BASE_URL}images/logo.webp`} alt="" className="h-9 w-9 object-contain" />
             <span className="font-display text-2xl font-bold">EduMap: Sejarah</span>
           </button>
         </h1>
@@ -165,7 +165,7 @@ export default function App() {
       </main>}
       </>
       )}
-      <footer className="px-6 pb-6 text-sm text-mut">Prototaip dengan data contoh. Semak setiap fakta dengan buku teks KSSR sebelum digunakan.</footer>
+      <footer className="px-6 pb-6 text-sm text-mut">Prototaip dengan data contoh.</footer>
       <ExportDialog open={exp} onClose={() => setExp(false)} topic={topic} tahun={tahun} cfg={cfg} setCfg={setCfg} />
       <div className="print-only"><Worksheet topic={topic} tahun={tahun} cfg={resolveCfg(topic, cfg)} /></div>
       <UnlockDialog open={ask !== null} onClose={() => setAsk(null)} onContinue={() => { setUnlocked(true); open(ask.topic ?? firstTopic(ask.n), ask.n, ask.spot) }} />

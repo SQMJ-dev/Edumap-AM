@@ -1,6 +1,6 @@
 import { TOPICS } from '../data/spots'
 
-const THEMES = { 4: 'Sejarah Awal Negara', 5: '[perlu disemak]', 6: 'Kemakmuran Negara Kita' }
+const THEMES = { 4: 'Sejarah Awal Negara', 5: '[Kedaulatan Negara]', 6: 'Kemakmuran Negara Kita' }
 
 export default function Home({ unlocked, onStart, onOverview }) {
   return (
